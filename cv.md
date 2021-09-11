@@ -33,11 +33,12 @@ _CMS:_
 - Tilda
 
 ## Code example
-
+```js
 function reverseNum(num){
 	let str = num.toString()
 	return (str == "")? "" : reverseNum(str.substr(1)) + str.charAt(0)
 }
+```
 
 ## Experience
 Don't have yet
