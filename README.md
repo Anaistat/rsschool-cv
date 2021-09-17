@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://Anaistat.github.io/rsschool-cv/
