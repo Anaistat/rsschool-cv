@@ -4,60 +4,72 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media.css">
 	<title>CV</title>
 </head>
 <body>
-	<div id="bg_container">
-		<main id="cv_container">
-			<div id="contsct_info_block">
-				<div id="photo">
+	<div class="bg-container">
+		<main>
+			<header>
+				<div class="my-photo">
 					<img src="img/me.JPG" alt="Tanya Zvereva">
 				</div>
-				<section id="about_me">
+				<div class="my-name">
+					<h1>Tanya</h1>
+					<h1>Zvereva</h1>
+				</div>
+			</header>
+			<div class="contact-info-block">
+				<section>
 					<h2>About me</h2>
 					<p>I take a responsible approach to designing beautiful and functional webpages thanks to my 7 years art school education. I enjoy working with sites’ aesthetics and also bringing them to life with Javascript animations.</p>
 				</section>
-				<section id="work_experience">
+				<section>
 					<h2>Work experience</h2>
 					<p>Don’t have yet</p>
 				</section>
-				<section id="contacts">
+				<section class="contacts">
 					<h2>Contacts</h2>
-					<h3><img src="img/location.png" class="icons" alt="location">Location</h3>
-					<p>Belarus, Minsk</p>
-					<h3><img src="img/phone.png" class="icons" alt="location">Phone</h3>
-					<p><a href="tel:+375291422041">+375(29)14-220-41</a></p>
-					<h3><img src="img/email.png" class="icons" alt="location">Email</h3>
-					<p><a href="mailto:tanyazverevaa@gmail.com">tanyazverevaa@gmail.com</a></p>
-					<h3><img src="img/telegram.png" class="icons" alt="location">Telegram</h3>
-					<p><a href="https://t.me/Aaanaistat">@Aaanaistat</a></p>
-					<h3><img src="img/github.png" class="icons" alt="location">GitHub</h3>
-					<p><a href="https://github.com/Anaistat">Anaistat</a></p>
+					<ul>
+						<li>
+							<h3><img src="img/location.png" class="icons" alt="location">Location</h3>
+							<p>Belarus, Minsk</p>
+						</li>
+						<li>
+							<h3><img src="img/phone.png" class="icons" alt="location">Phone</h3>
+							<p><a href="tel:+375291422041">+375(29)14-220-41</a></p>
+						</li>
+						<li>
+							<h3><img src="img/email.png" class="icons" alt="location">Email</h3>
+							<p><a href="mailto:tanyazverevaa@gmail.com">tanyazverevaa@gmail.com</a></p>
+						</li>
+						<li>
+							<h3><img src="img/telegram.png" class="icons" alt="location">Telegram</h3>
+							<p><a href="https://t.me/Aaanaistat">@Aaanaistat</a></p>
+						</li>
+						<li>
+							<h3><img src="img/github.png" class="icons" alt="location">GitHub</h3>
+							<p><a href="https://github.com/Anaistat">Anaistat</a></p>
+						</li>
+					</ul>
 				</section>
-				<div class="footer_links">
-					<a href="https://github.com/Anaistat">My GitHub</a>
-				</div>
 			</div>
 
-			<div id="main_info">
-				<header id="fio">
-					<h1 id="name_style">Tanya</h1>
-					<h1>Zvereva</h1>
-				</header>
-				<section id="education">
+			<div class="main-info">
+				<section>
 					<h2>Education</h2>
 					<p>4th year student of the Belarusian State University, faculty of social and cultural communication, web-programming and computer design specialization.</p>
 				</section>
-				<section id="code_example">
+				<section>
 					<h2>Code example</h2>
-					<div id="code">
+					<div class="code-field">
     					<p>function reverseNum (num){</p>
     					<p class="function_code">let str = num.toString()<Br>return (str == "")? "" : <br>reverseNum(str.substr(1)) + <br>str.charAt(0)}<Br></p>
 					</div>
 				</section>
-				<section id="skills">
+				<section class="skills">
 					<h2>Skills</h2>
-					<section class="skills_cell">
+					<section>
 						<h3>Programming languages</h3>
 						<ul>
 							<li><p>JavaScript</p></li>
@@ -67,7 +79,7 @@
 						</ul>
 						
 					</section>
-					<section class="skills_cell">
+					<section>
 						<h3>Relational databases & CMS</h3>
 						<ul>
 							<li><p>MySQL</p></li>
@@ -75,7 +87,7 @@
 							<li><p>Tilda</p></li>
 						</ul>
 					</section>
-					<section class="skills_cell">
+					<section>
 						<h3>Markup languages</h3>
 						<ul>
 							<li><p>HTML5</p></li>
@@ -83,7 +95,7 @@
 							<li><p>Bootstrap</p></li>
 						</ul>
 					</section>
-					<section class="skills_cell">
+					<section>
 						<h3>Graphic editors</h3>
 						<ul>
 							<li><p>Adobe Photoshop</p></li>
@@ -92,15 +104,20 @@
 						</ul>
 					</section>
 				</section>
-				<section id="english_level">
+				<section>
 					<h2>English</h2>
 					<p>B1 (Intermediate English). Was interviewed in Adukar and have little experience with a native speaker.</p>
 				</section>
-				<footer class="footer_links">
-					<p>@2021</p>
-					<a href="https://rs.school/js/"><img src="img/rs_logo.png" alt="rsschool"></a>
-				</footer>
 			</div>
+			<footer>
+				<div>
+					<a href="https://github.com/Anaistat">My GitHub</a>
+				</div>
+				<div>
+					<p>@2021</p>
+					<a href="https://rs.school/js/"><img src="img/rs_logo.png" alt="rsschool" width="120" height="50"></a>
+				</div>
+			</footer>
 		</main>
 	</div>
 </body>
