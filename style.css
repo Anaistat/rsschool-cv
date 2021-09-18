@@ -1,47 +1,51 @@
-body{
-	margin: 0;
-	color: #fff;
-}
-
 @font-face{
-	font-family: "Quicksand-Light";
+	font-family: "Quicksand";
+	font-weight: 100;
 	src: url("fonts/Quicksand-Light.ttf");
 }
 
 @font-face{
-	font-family: "Quicksand-Regular";
+	font-family: "Quicksand";
+	font-weight: normal;
 	src: url("fonts/Quicksand-Regular.ttf");
 }
 @font-face{
-	font-family: "Quicksand-Medium";
+	font-family: "Quicksand";
+	font-weight: bold;
 	src: url("fonts/Quicksand-Medium.ttf");
+}
+
+body{
+	margin: 0;
+	color: #ffffff;
+	font-family: Quicksand;
 }
 
 p, a{
 	font-size: 18px;
-	font-family: Quicksand-Light;
+	font-weight: 100;
 }
 
 a{
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 h1{
-	color: #000;
+	color: #000000;
 	font-size: 82px;
 	margin: 0;
 	text-align: left;
-	font-family: Quicksand-Medium;
+	font-weight: bold;
 }
+
 h2{
 	font-size: 36px;
-	
-	font-family: Quicksand-Regular;
+	font-weight: normal;
 }
 
 h3{
-	font-family: Quicksand-Medium;
+	font-weight: normal;
 }
 
 .icons{
@@ -50,200 +54,135 @@ h3{
 	margin-right: 10px;
 }
 
-#bg_container{
+.bg-container{
 	width: 100vw;
-	height: 1600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(180deg, rgba(166,170,171,1) 0%, rgba(100,102,102,1) 100%);
 }
 
-#cv_container{
+main{
 	width: 1000px;
-	height: 1500px;
+	margin: 50px 0;
 	background-color: #ededed;
 	box-shadow: 0px 0px 30px 25px rgba(36, 36, 36, 0.2);
 	display: flex;
+	flex-wrap: wrap;
 }
 
-#contsct_info_block{
+main > div{
+	padding: 0 25px 25px 25px;
+	box-sizing: border-box;
+}
+
+header, footer{
+	width: 100%;
+	display: flex;
+}
+
+.my-photo{
+	padding: 15px;
+}
+
+.my-photo img{
+	width: 290px;
+}
+
+.my-name{
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 30px 0 0 30px;
+}
+
+.my-name h1{
+	height: 50%;
+}
+
+.my-name h1:first-child{
+	font-weight: 100;
+	margin-bottom: -160px;
+}
+
+footer a{
+	text-decoration: underline;
+	display: block;
+}
+
+footer > div, header > div{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+footer > div:first-child, header > div:first-child{
 	width: 36%;
-	height: 100%;
-	background-color: #000;
+	background-color: #000000;
 }
 
-#contsct_info_block p{
+footer > div:last-child, header > div:last-child{
+	width: 64%;
+	color: #000000;
+}
+
+.contact-info-block{
+	width: 36%;
+	background-color: #000000;
+}
+
+.contact-info-block p{
 	color: #c6c6c6;
 }
 
-#main_info{
+.contact-info-block > section{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.main-info{
 	width: 64%;
-	height: 100%;
-	color: #000;
+	color: #000000;
+	padding-right: 50px;
 }
 
-#photo{
+.main-info > section{
 	width: 100%;
-	height: 350px;
-	justify-content: center;
 }
 
-#photo img{
-	width: 75%;
-	height: 90%;
-}
-
-#contsct_info_block, #main_info, #photo{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#about_me{
-	width: 86%;
-	height: 310px;
-}
-
-#work_experience{
-	width: 86%;
-	height: 170px;
-}
-
-#contacts{
-	width: 86%;
-	height: 550px;
-}
-
-#fio{
-	width: 82%;
-	height: 350px;
-}
-
-#name_style{
-	font-family: Quicksand-Light;
-	padding-top: 40px;
-}
-
-#education{
-	width: 82%;
-	height: 200px;
-}
-
-#code_example{
-	width: 82%;
-	height: 230px;
-}
-
-#code{
-	width: 100%;
-	height: 134px;
+.code-field{
 	background-color: #d9d9d9;
+	padding: 5px 10px;
 }
 
 .function_code{
 	padding-left: 20px;
 }
 
-#skills{
-	width: 82%;
-	height: 420px;
+.skills{
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.skills_cell{
+.skills > section{
 	width: 50%;
 }
 
-#skills h2{
+.skills h2{
 	width: 100%;
 }
 
-#skills p{
+.skills p{
 	margin: 0;
 }
 
 .skills_range{
 	width: 80px;
-	height: 10px;
-	background-color: #000;
+	background-color: #000000;
 	margin-left: 10px;
 }
 
-#english_level{
-	width: 82%;
-	height: 180px
-}
-
-.footer_links{
-	width: 100%;
-	height: 100px;
-	display: flex;
-	align-items: center;
-}
-
-.footer_links:first-child{
-	justify-content: center;
-}
-
-.footer_links:last-child{
-	justify-content: space-around;
-}
-
-.footer_links a{
-	text-decoration: underline;
-}
-
-.footer_links a img{
-	width: 120px;
-	height: 50px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-		#cv_container{
-			width: 90%;
-		}
-
-		#photo img{
-			width: 75%;
-			height: 80%;
-		}
-}
-
-@media only screen and (min-width: 320px) and (max-width: 768px){
-
-	#bg_container{
-		height: 1800px;
-	}
-
-	#cv_container{
-			width: 90%;
-			height: 1700px;
-	}
-
-	#photo img{
-			width: 75%;
-			height: 65%;
-		}
-
-	#about_me{
-		height: 360px;
-	}
-
-	#contacts{
-		height: 800px;
-	}
-
-	#work_experience{
-		height: 200px;
-	}
-
-	.skills_cell{
-		width: 100%;
-	}
-
-	#skills{
-		height: 700px;
-	}
+.contacts ul{
+	list-style: none;
+	padding: 0;
 }
